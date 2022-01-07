@@ -1,0 +1,19 @@
+digraph tree {
+	graph [rankdir="UD"];
+	node [shape=record];
+	struct64FE00 [label="{<ptr> 64FE00 | <data> книга | {<left> AD1590 | <right> AD1730}}"];
+	structAD1590 [label="{<ptr> AD1590 | <data> контейнер | {<left> AD15E0 | <right> AD1630}}"];
+	structAD15E0 [label="{<ptr> AD15E0 | <data> титульник | {<left> 0 | <right> 0}}"];
+	structAD1630 [label="{<ptr> AD1630 | <data> главы | {<left> 0 | <right> AD1670}}"];
+	structAD1670 [label="{<ptr> AD1670 | <data>  | {<left> AD16B0 | <right> AD16F0}}"];
+	structAD16B0 [label="{<ptr> AD16B0 | <data> 1 | {<left> 0 | <right> 0}}"];
+	structAD16F0 [label="{<ptr> AD16F0 | <data> 2 | {<left> 0 | <right> 0}}"];
+	structAD1670:left -> structAD16B0:ptr;
+	structAD1670:right -> structAD16F0:ptr;
+	structAD1630:right -> structAD1670:ptr;
+	structAD1590:left -> structAD15E0:ptr;
+	structAD1590:right -> structAD1630:ptr;
+	structAD1730 [label="{<ptr> AD1730 | <data> авторы | {<left> 0 | <right> 0}}"];
+	struct64FE00:left -> structAD1590:ptr;
+	struct64FE00:right -> structAD1730:ptr;
+}

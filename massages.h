@@ -1,0 +1,14 @@
+const wchar_t select_modes[] = L"выберете режим игры: %s, %s, %s:\n";
+const wchar_t qstn[] = L"Это %s?\n";
+const wchar_t answ_qstn[] = L"Вы загадали %s?\n";
+const wchar_t decrptn[] = L"Это %s:";
+const wchar_t false_answ[] = L"Упс, я не знаю что вы загадали!! Хотите чтобы я добавил то, что вы загадали?\n";
+const wchar_t right_answ[] = L"Я так и знал! Возврат в главное меню...";
+const wchar_t unreg_answ[] = L"Я не разобрал что вы написали, ответьте еще раз\n";
+const wchar_t mode_msg[] = L"Вы выбрали режим %s.\n";
+const wchar_t def_mode[] = L"определение";
+const wchar_t view_mode[] = L"просмотр";
+const wchar_t guess_mode[] = L"игра";
+const wchar_t exit_mode[] = L"выход";
+const wchar_t yes_no[] = L"[да/нет]>";
+const wchar_t def_qstn[] = L"Дайте такое описание загаданному слову, чтобы оно не подходило \"%s\"";
